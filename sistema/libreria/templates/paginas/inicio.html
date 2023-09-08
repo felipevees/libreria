@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block titulo %} Inicio {% endblock %}
+
+{% block contenido %} 
+
+<div class="card p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Libreria pipevees</h1>
+      <p style="margin-top: 30px;" class="col-md-8 fs-4 ">Empezar a ingresar libros</p>
+      <hr class="my-4" />
+      <p style="margin-top: 30px;" class="lead text-center"">
+        <a style="background-color: #0F5257 !important; border-color: #A39171 !important;" class="btn btn-primary btn-lg" href="{% url 'libros' %}" role="button">Empezar</a>
+      </p>
+    </div>
+  </div>
+
+{% endblock %}
